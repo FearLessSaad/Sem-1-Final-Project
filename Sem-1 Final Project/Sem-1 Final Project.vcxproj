@@ -136,11 +136,26 @@
     <ClInclude Include="Form1.h">
       <FileType>CppForm</FileType>
     </ClInclude>
+    <ClInclude Include="Attandence.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="HomeAttandence.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="HomeFeeStatus.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
     <ClInclude Include="Main.h">
       <FileType>CppForm</FileType>
     </ClInclude>
     <ClInclude Include="pch.h" />
     <ClInclude Include="Resource.h" />
+    <ClInclude Include="StudentAttandence.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="Students.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="AssemblyInfo.cpp" />
@@ -178,6 +193,24 @@
     <Reference Include="DevExpress.XtraEditors.v21.2">
       <HintPath>..\..\..\..\..\..\Program Files (x86)\DevExpress 21.2\Components\Bin\Framework\DevExpress.XtraEditors.v21.2.dll</HintPath>
     </Reference>
+    <Reference Include="DevExpress.XtraGrid.v21.2">
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\DevExpress 21.2\Components\Bin\Framework\DevExpress.XtraGrid.v21.2.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraLayout.v21.2">
+      <HintPath>DevExpress.XtraLayout.v21.2</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraPrinting.v21.2">
+      <HintPath>DevExpress.XtraPrinting.v21.2</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraScheduler.v21.2">
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\DevExpress 21.2\Components\Bin\Framework\DevExpress.XtraScheduler.v21.2.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraScheduler.v21.2.Core">
+      <HintPath>DevExpress.XtraScheduler.v21.2.Core</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraScheduler.v21.2.Core.Desktop">
+      <HintPath>DevExpress.XtraScheduler.v21.2.Core.Desktop</HintPath>
+    </Reference>
     <Reference Include="MySql.Data, Version=8.0.28.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d" />
     <Reference Include="System" />
     <Reference Include="System.ComponentModel.DataAnnotations" />
@@ -192,11 +225,23 @@
     <EmbeddedResource Include="AddNewStudent.resx">
       <DependentUpon>AddNewStudent.h</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Attandence.resx">
+      <DependentUpon>Attandence.h</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.h</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="HomeFeeStatus.resx">
+      <DependentUpon>HomeFeeStatus.h</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Main.resx">
       <DependentUpon>Main.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StudentAttandence.resx">
+      <DependentUpon>StudentAttandence.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Students.resx">
+      <DependentUpon>Students.h</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
