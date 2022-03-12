@@ -133,6 +133,9 @@
     <ClInclude Include="AddNewStudent.h">
       <FileType>CppForm</FileType>
     </ClInclude>
+    <ClInclude Include="Details.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
     <ClInclude Include="Form1.h">
       <FileType>CppForm</FileType>
     </ClInclude>
@@ -227,6 +230,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Attandence.resx">
       <DependentUpon>Attandence.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Details.resx">
+      <DependentUpon>Details.h</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.h</DependentUpon>

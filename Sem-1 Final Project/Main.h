@@ -619,7 +619,7 @@ namespace CppCLRWinFormsProject {
 			homeAttandence->Hide();
 			students->Hide();
 			addNewStudent->Hide();
-			attandence->Show();
+			attandence->Hide();
 			//Configuring Form To Load In Current Pannel
 			studentAttandence->Dock = Windows::Forms::DockStyle::Fill;
 			studentAttandence->TopLevel = false;

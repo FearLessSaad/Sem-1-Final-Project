@@ -45,43 +45,15 @@ namespace CppCLRWinFormsProject {
 	private: DevExpress::XtraEditors::LabelControl^ labelControl2;
 	private: System::Windows::Forms::ComboBox^ _class;
 	private: DevExpress::XtraEditors::SimpleButton^ btnSelect;
-
 	private: DevExpress::XtraEditors::SeparatorControl^ separatorControl2;
 	private: DevExpress::XtraEditors::SimpleButton^ btnCancel;
-
-
-
 	private: DevExpress::XtraEditors::SimpleButton^ btnSave;
-
-
-
-
-
-
-
 	private: System::Windows::Forms::DataGridView^ dataGridView1;
 	private: System::Windows::Forms::DataGridViewTextBoxColumn^ id;
 	private: System::Windows::Forms::DataGridViewTextBoxColumn^ full_name;
 	private: System::Windows::Forms::DataGridViewTextBoxColumn^ father_name;
 	private: System::Windows::Forms::DataGridViewTextBoxColumn^ class_name;
 	private: System::Windows::Forms::DataGridViewComboBoxColumn^ presStatus;
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 	private:
 		/// <summary>
