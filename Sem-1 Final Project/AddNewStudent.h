@@ -46,27 +46,12 @@ namespace CppCLRWinFormsProject {
 	private: DevExpress::XtraEditors::TextEdit^ fatherName;
 	private: DevExpress::XtraEditors::LabelControl^ labelControl3;
 	private: DevExpress::XtraEditors::TextEdit^ tel;
-
 	private: DevExpress::XtraEditors::LabelControl^ labelControl4;
 	private: DevExpress::XtraEditors::TextEdit^ bfrom;
-
 	private: DevExpress::XtraEditors::LabelControl^ daskdasjlkdaslk;
-
-
-
 	private: DevExpress::XtraEditors::LabelControl^ sakdjdklasdadsa;
-
-
-
-
-
 	private: DevExpress::XtraEditors::LabelControl^ labelControl7;
-
-
-
-
 	private: DevExpress::XtraEditors::SimpleButton^ simpleButton1;
-
 	private: DevExpress::XtraGrid::GridControl^ gridControl1;
 	private: DevExpress::XtraGrid::Views::Grid::GridView^ gridView1;
 

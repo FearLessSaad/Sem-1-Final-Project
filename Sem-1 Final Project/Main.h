@@ -1,10 +1,13 @@
 #pragma once
 #include "AddNewStudent.h"
-#include "HomeAttandence.h"
-#include "HomeFeeStatus.h"
 #include "Students.h"
 #include "Attandence.h"
 #include "StudentAttandence.h"
+#include "AddExam.h"
+#include "DelExam.h"
+#include "AddGrades.h"
+#include "Report.h"
+#include "ReportByStudent.h"
 
 namespace CppCLRWinFormsProject {
 
@@ -42,15 +45,10 @@ namespace CppCLRWinFormsProject {
 		}
 	private: DevExpress::XtraBars::Ribbon::RibbonControl^ ribbonControl1;
 	protected:
-	private: DevExpress::XtraBars::Ribbon::RibbonPage^ ribbonPage1;
-	private: DevExpress::XtraBars::Ribbon::RibbonPageGroup^ ribbonPageGroup1;
-
 	private: DevExpress::XtraBars::Ribbon::RibbonPage^ ribbonPage2;
 	private: DevExpress::XtraBars::Ribbon::RibbonPageGroup^ ribbonPageGroup3;
 	private: DevExpress::XtraBars::Ribbon::RibbonPage^ ribbonPage3;
 	private: DevExpress::XtraBars::Ribbon::RibbonPageGroup^ ribbonPageGroup4;
-
-
 	private: DevExpress::XtraBars::BarButtonItem^ barButtonItem1;
 	private: DevExpress::XtraBars::BarButtonItem^ barButtonItem2;
 	private: DevExpress::XtraBars::Ribbon::RibbonStatusBar^ MainStatusBar;
@@ -58,8 +56,6 @@ namespace CppCLRWinFormsProject {
 	private: DevExpress::XtraBars::BarButtonItem^ barButtonItem3;
 	private: DevExpress::XtraBars::BarButtonItem^ barButtonItem4;
 	private: DevExpress::XtraBars::BarButtonItem^ barButtonItem5;
-
-
 	private: DevExpress::XtraBars::BarButtonItem^ barButtonItem6;
 	private: DevExpress::XtraBars::Ribbon::RibbonPage^ ribbonPage6;
 	private: DevExpress::XtraBars::Ribbon::RibbonPageGroup^ ribbonPageGroup6;
@@ -87,6 +83,21 @@ namespace CppCLRWinFormsProject {
 	private: DevExpress::XtraBars::BarStaticItem^ barStaticItem1;
 	private: DevExpress::XtraBars::BarStaticItem^ barStaticItem2;
 	public: DevExpress::XtraBars::BarStaticItem^ MainWindowMessage;
+	private: DevExpress::XtraBars::BarButtonItem^ barButtonItem17;
+	public:
+
+	private: DevExpress::XtraBars::Ribbon::RibbonPageGroup^ ribbonPageGroup8;
+	private: DevExpress::XtraBars::Ribbon::RibbonPageGroup^ ribbonPageGroup9;
+	private: DevExpress::XtraBars::Ribbon::RibbonPageGroup^ ribbonPageGroup12;
+	private: DevExpress::XtraBars::Ribbon::RibbonPageGroup^ ribbonPageGroup10;
+	private: DevExpress::XtraBars::Ribbon::RibbonPageGroup^ ribbonPageGroup11;
+	private: DevExpress::XtraBars::BarButtonItem^ barButtonItem18;
+	private: DevExpress::XtraBars::Ribbon::RibbonPageGroup^ ribbonPageGroup1;
+	private: DevExpress::XtraBars::BarButtonItem^ barButtonItem19;
+	private: DevExpress::XtraBars::BarButtonItem^ barButtonItem20;
+	private: DevExpress::XtraBars::BarButtonItem^ barButtonItem21;
+	private: DevExpress::XtraBars::Ribbon::RibbonPageGroup^ ribbonPageGroup5;
+	private: DevExpress::XtraBars::Ribbon::RibbonPageGroup^ ribbonPageGroup13;
 	private:
 
 	private: System::ComponentModel::IContainer^ components;
@@ -139,14 +150,20 @@ namespace CppCLRWinFormsProject {
 			this->barStaticItem1 = (gcnew DevExpress::XtraBars::BarStaticItem());
 			this->barStaticItem2 = (gcnew DevExpress::XtraBars::BarStaticItem());
 			this->MainWindowMessage = (gcnew DevExpress::XtraBars::BarStaticItem());
-			this->ribbonPage1 = (gcnew DevExpress::XtraBars::Ribbon::RibbonPage());
-			this->ribbonPageGroup1 = (gcnew DevExpress::XtraBars::Ribbon::RibbonPageGroup());
+			this->barButtonItem17 = (gcnew DevExpress::XtraBars::BarButtonItem());
+			this->barButtonItem18 = (gcnew DevExpress::XtraBars::BarButtonItem());
 			this->ribbonPage2 = (gcnew DevExpress::XtraBars::Ribbon::RibbonPage());
 			this->ribbonPageGroup3 = (gcnew DevExpress::XtraBars::Ribbon::RibbonPageGroup());
+			this->ribbonPageGroup8 = (gcnew DevExpress::XtraBars::Ribbon::RibbonPageGroup());
 			this->ribbonPage3 = (gcnew DevExpress::XtraBars::Ribbon::RibbonPage());
 			this->ribbonPageGroup4 = (gcnew DevExpress::XtraBars::Ribbon::RibbonPageGroup());
+			this->ribbonPageGroup9 = (gcnew DevExpress::XtraBars::Ribbon::RibbonPageGroup());
 			this->ribbonPage6 = (gcnew DevExpress::XtraBars::Ribbon::RibbonPage());
 			this->ribbonPageGroup6 = (gcnew DevExpress::XtraBars::Ribbon::RibbonPageGroup());
+			this->ribbonPageGroup12 = (gcnew DevExpress::XtraBars::Ribbon::RibbonPageGroup());
+			this->ribbonPageGroup10 = (gcnew DevExpress::XtraBars::Ribbon::RibbonPageGroup());
+			this->ribbonPageGroup11 = (gcnew DevExpress::XtraBars::Ribbon::RibbonPageGroup());
+			this->ribbonPageGroup1 = (gcnew DevExpress::XtraBars::Ribbon::RibbonPageGroup());
 			this->ribbonPage4 = (gcnew DevExpress::XtraBars::Ribbon::RibbonPage());
 			this->ribbonPageGroup2 = (gcnew DevExpress::XtraBars::Ribbon::RibbonPageGroup());
 			this->ribbonPage7 = (gcnew DevExpress::XtraBars::Ribbon::RibbonPage());
@@ -154,6 +171,11 @@ namespace CppCLRWinFormsProject {
 			this->MainStatusBar = (gcnew DevExpress::XtraBars::Ribbon::RibbonStatusBar());
 			this->barButtonItem2 = (gcnew DevExpress::XtraBars::BarButtonItem());
 			this->MainPannel = (gcnew DevExpress::XtraEditors::PanelControl());
+			this->barButtonItem19 = (gcnew DevExpress::XtraBars::BarButtonItem());
+			this->ribbonPageGroup5 = (gcnew DevExpress::XtraBars::Ribbon::RibbonPageGroup());
+			this->barButtonItem20 = (gcnew DevExpress::XtraBars::BarButtonItem());
+			this->ribbonPageGroup13 = (gcnew DevExpress::XtraBars::Ribbon::RibbonPageGroup());
+			this->barButtonItem21 = (gcnew DevExpress::XtraBars::BarButtonItem());
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->ribbonControl1))->BeginInit();
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->repositoryItemColorPickEdit1))->BeginInit();
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->repositoryItemComboBox1))->BeginInit();
@@ -164,21 +186,22 @@ namespace CppCLRWinFormsProject {
 			// ribbonControl1
 			// 
 			this->ribbonControl1->ExpandCollapseItem->Id = 0;
-			this->ribbonControl1->Items->AddRange(gcnew cli::array< DevExpress::XtraBars::BarItem^  >(24) {
+			this->ribbonControl1->Items->AddRange(gcnew cli::array< DevExpress::XtraBars::BarItem^  >(29) {
 				this->ribbonControl1->ExpandCollapseItem,
 					this->ribbonControl1->SearchEditItem, this->barButtonItem1, this->barButtonItem3, this->barButtonItem4, this->barButtonItem5,
 					this->barButtonItem6, this->barButtonItem7, this->A, this->barButtonItem8, this->barButtonItem9, this->barButtonItem10, this->barButtonItem11,
 					this->barButtonItem12, this->barButtonItem13, this->barButtonItem14, this->barEditItem1, this->barSubItem1, this->barButtonItem15,
-					this->barEditItem2, this->barButtonItem16, this->barStaticItem1, this->barStaticItem2, this->MainWindowMessage
+					this->barEditItem2, this->barButtonItem16, this->barStaticItem1, this->barStaticItem2, this->MainWindowMessage, this->barButtonItem17,
+					this->barButtonItem18, this->barButtonItem19, this->barButtonItem20, this->barButtonItem21
 			});
 			this->ribbonControl1->Location = System::Drawing::Point(0, 0);
-			this->ribbonControl1->MaxItemId = 24;
+			this->ribbonControl1->MaxItemId = 29;
 			this->ribbonControl1->Name = L"ribbonControl1";
 			this->ribbonControl1->PageHeaderItemLinks->Add(this->barStaticItem1);
 			this->ribbonControl1->PageHeaderItemLinks->Add(this->barStaticItem2);
-			this->ribbonControl1->Pages->AddRange(gcnew cli::array< DevExpress::XtraBars::Ribbon::RibbonPage^  >(6) {
-				this->ribbonPage1,
-					this->ribbonPage2, this->ribbonPage3, this->ribbonPage6, this->ribbonPage4, this->ribbonPage7
+			this->ribbonControl1->Pages->AddRange(gcnew cli::array< DevExpress::XtraBars::Ribbon::RibbonPage^  >(5) {
+				this->ribbonPage2,
+					this->ribbonPage3, this->ribbonPage6, this->ribbonPage4, this->ribbonPage7
 			});
 			this->ribbonControl1->RepositoryItems->AddRange(gcnew cli::array< DevExpress::XtraEditors::Repository::RepositoryItem^  >(2) {
 				this->repositoryItemColorPickEdit1,
@@ -193,7 +216,6 @@ namespace CppCLRWinFormsProject {
 			this->barButtonItem1->Caption = L"Attandence";
 			this->barButtonItem1->Id = 1;
 			this->barButtonItem1->Name = L"barButtonItem1";
-			this->barButtonItem1->ItemClick += gcnew DevExpress::XtraBars::ItemClickEventHandler(this, &Main::barButtonItem1_ItemClick);
 			// 
 			// barButtonItem3
 			// 
@@ -222,7 +244,6 @@ namespace CppCLRWinFormsProject {
 			this->barButtonItem6->Caption = L"Fee Status";
 			this->barButtonItem6->Id = 6;
 			this->barButtonItem6->Name = L"barButtonItem6";
-			this->barButtonItem6->ItemClick += gcnew DevExpress::XtraBars::ItemClickEventHandler(this, &Main::barButtonItem6_ItemClick);
 			// 
 			// barButtonItem7
 			// 
@@ -258,6 +279,7 @@ namespace CppCLRWinFormsProject {
 			this->barButtonItem10->Hint = L"Create a new exam";
 			this->barButtonItem10->Id = 11;
 			this->barButtonItem10->Name = L"barButtonItem10";
+			this->barButtonItem10->ItemClick += gcnew DevExpress::XtraBars::ItemClickEventHandler(this, &Main::barButtonItem10_ItemClick);
 			// 
 			// barButtonItem11
 			// 
@@ -265,12 +287,14 @@ namespace CppCLRWinFormsProject {
 			this->barButtonItem11->Hint = L"Add Marks/Grades of cundected exam";
 			this->barButtonItem11->Id = 12;
 			this->barButtonItem11->Name = L"barButtonItem11";
+			this->barButtonItem11->ItemClick += gcnew DevExpress::XtraBars::ItemClickEventHandler(this, &Main::barButtonItem11_ItemClick);
 			// 
 			// barButtonItem12
 			// 
 			this->barButtonItem12->Caption = L"Report";
 			this->barButtonItem12->Id = 13;
 			this->barButtonItem12->Name = L"barButtonItem12";
+			this->barButtonItem12->ItemClick += gcnew DevExpress::XtraBars::ItemClickEventHandler(this, &Main::barButtonItem12_ItemClick);
 			// 
 			// barButtonItem13
 			// 
@@ -375,67 +399,113 @@ namespace CppCLRWinFormsProject {
 			this->MainWindowMessage->Id = 23;
 			this->MainWindowMessage->Name = L"MainWindowMessage";
 			// 
-			// ribbonPage1
+			// barButtonItem17
 			// 
-			this->ribbonPage1->Groups->AddRange(gcnew cli::array< DevExpress::XtraBars::Ribbon::RibbonPageGroup^  >(1) { this->ribbonPageGroup1 });
-			this->ribbonPage1->Name = L"ribbonPage1";
-			this->ribbonPage1->Text = L"Home";
+			this->barButtonItem17->Caption = L"Del Exam";
+			this->barButtonItem17->Id = 24;
+			this->barButtonItem17->Name = L"barButtonItem17";
+			this->barButtonItem17->ItemClick += gcnew DevExpress::XtraBars::ItemClickEventHandler(this, &Main::barButtonItem17_ItemClick);
 			// 
-			// ribbonPageGroup1
+			// barButtonItem18
 			// 
-			this->ribbonPageGroup1->ItemLinks->Add(this->barButtonItem1);
-			this->ribbonPageGroup1->ItemLinks->Add(this->barButtonItem6);
-			this->ribbonPageGroup1->Name = L"ribbonPageGroup1";
-			this->ribbonPageGroup1->Text = L"ribbonPageGroup1";
+			this->barButtonItem18->Caption = L"Report By Student";
+			this->barButtonItem18->Id = 25;
+			this->barButtonItem18->Name = L"barButtonItem18";
+			this->barButtonItem18->ItemClick += gcnew DevExpress::XtraBars::ItemClickEventHandler(this, &Main::barButtonItem18_ItemClick);
 			// 
 			// ribbonPage2
 			// 
-			this->ribbonPage2->Groups->AddRange(gcnew cli::array< DevExpress::XtraBars::Ribbon::RibbonPageGroup^  >(1) { this->ribbonPageGroup3 });
+			this->ribbonPage2->Groups->AddRange(gcnew cli::array< DevExpress::XtraBars::Ribbon::RibbonPageGroup^  >(2) {
+				this->ribbonPageGroup3,
+					this->ribbonPageGroup8
+			});
 			this->ribbonPage2->Name = L"ribbonPage2";
 			this->ribbonPage2->Text = L"Students";
 			// 
 			// ribbonPageGroup3
 			// 
 			this->ribbonPageGroup3->ItemLinks->Add(this->barButtonItem3);
-			this->ribbonPageGroup3->ItemLinks->Add(this->barButtonItem4);
 			this->ribbonPageGroup3->Name = L"ribbonPageGroup3";
 			this->ribbonPageGroup3->Text = L"ribbonPageGroup3";
 			// 
+			// ribbonPageGroup8
+			// 
+			this->ribbonPageGroup8->ItemLinks->Add(this->barButtonItem4);
+			this->ribbonPageGroup8->Name = L"ribbonPageGroup8";
+			this->ribbonPageGroup8->Text = L"ribbonPageGroup8";
+			// 
 			// ribbonPage3
 			// 
-			this->ribbonPage3->Groups->AddRange(gcnew cli::array< DevExpress::XtraBars::Ribbon::RibbonPageGroup^  >(1) { this->ribbonPageGroup4 });
+			this->ribbonPage3->Groups->AddRange(gcnew cli::array< DevExpress::XtraBars::Ribbon::RibbonPageGroup^  >(2) {
+				this->ribbonPageGroup4,
+					this->ribbonPageGroup9
+			});
 			this->ribbonPage3->Name = L"ribbonPage3";
 			this->ribbonPage3->Text = L"Attandence";
 			// 
 			// ribbonPageGroup4
 			// 
 			this->ribbonPageGroup4->ItemLinks->Add(this->barButtonItem13);
-			this->ribbonPageGroup4->ItemLinks->Add(this->barButtonItem14);
 			this->ribbonPageGroup4->Name = L"ribbonPageGroup4";
 			this->ribbonPageGroup4->Text = L"ribbonPageGroup4";
 			// 
+			// ribbonPageGroup9
+			// 
+			this->ribbonPageGroup9->ItemLinks->Add(this->barButtonItem14);
+			this->ribbonPageGroup9->Name = L"ribbonPageGroup9";
+			this->ribbonPageGroup9->Text = L"ribbonPageGroup9";
+			// 
 			// ribbonPage6
 			// 
-			this->ribbonPage6->Groups->AddRange(gcnew cli::array< DevExpress::XtraBars::Ribbon::RibbonPageGroup^  >(1) { this->ribbonPageGroup6 });
+			this->ribbonPage6->Groups->AddRange(gcnew cli::array< DevExpress::XtraBars::Ribbon::RibbonPageGroup^  >(5) {
+				this->ribbonPageGroup6,
+					this->ribbonPageGroup12, this->ribbonPageGroup10, this->ribbonPageGroup11, this->ribbonPageGroup1
+			});
 			this->ribbonPage6->Name = L"ribbonPage6";
 			this->ribbonPage6->Text = L"Grading";
 			// 
 			// ribbonPageGroup6
 			// 
 			this->ribbonPageGroup6->ItemLinks->Add(this->barButtonItem10);
-			this->ribbonPageGroup6->ItemLinks->Add(this->barButtonItem11);
-			this->ribbonPageGroup6->ItemLinks->Add(this->barButtonItem12);
 			this->ribbonPageGroup6->Name = L"ribbonPageGroup6";
 			this->ribbonPageGroup6->Text = L"ribbonPageGroup6";
 			// 
+			// ribbonPageGroup12
+			// 
+			this->ribbonPageGroup12->ItemLinks->Add(this->barButtonItem17);
+			this->ribbonPageGroup12->Name = L"ribbonPageGroup12";
+			this->ribbonPageGroup12->Text = L"ribbonPageGroup12";
+			// 
+			// ribbonPageGroup10
+			// 
+			this->ribbonPageGroup10->ItemLinks->Add(this->barButtonItem11);
+			this->ribbonPageGroup10->Name = L"ribbonPageGroup10";
+			this->ribbonPageGroup10->Text = L"ribbonPageGroup10";
+			// 
+			// ribbonPageGroup11
+			// 
+			this->ribbonPageGroup11->ItemLinks->Add(this->barButtonItem12);
+			this->ribbonPageGroup11->Name = L"ribbonPageGroup11";
+			this->ribbonPageGroup11->Text = L"ribbonPageGroup11";
+			// 
+			// ribbonPageGroup1
+			// 
+			this->ribbonPageGroup1->ItemLinks->Add(this->barButtonItem18);
+			this->ribbonPageGroup1->Name = L"ribbonPageGroup1";
+			this->ribbonPageGroup1->Text = L"ribbonPageGroup1";
+			// 
 			// ribbonPage4
 			// 
-			this->ribbonPage4->Groups->AddRange(gcnew cli::array< DevExpress::XtraBars::Ribbon::RibbonPageGroup^  >(1) { this->ribbonPageGroup2 });
+			this->ribbonPage4->Groups->AddRange(gcnew cli::array< DevExpress::XtraBars::Ribbon::RibbonPageGroup^  >(3) {
+				this->ribbonPageGroup2,
+					this->ribbonPageGroup5, this->ribbonPageGroup13
+			});
 			this->ribbonPage4->Name = L"ribbonPage4";
 			this->ribbonPage4->Text = L"Fee";
 			// 
 			// ribbonPageGroup2
 			// 
+			this->ribbonPageGroup2->ItemLinks->Add(this->barButtonItem19);
 			this->ribbonPageGroup2->Name = L"ribbonPageGroup2";
 			this->ribbonPageGroup2->Text = L"ribbonPageGroup2";
 			// 
@@ -449,8 +519,6 @@ namespace CppCLRWinFormsProject {
 			// 
 			this->ribbonPageGroup7->ItemLinks->Add(this->barButtonItem7);
 			this->ribbonPageGroup7->ItemLinks->Add(this->A);
-			this->ribbonPageGroup7->ItemLinks->Add(this->barButtonItem8);
-			this->ribbonPageGroup7->ItemLinks->Add(this->barButtonItem9);
 			this->ribbonPageGroup7->Name = L"ribbonPageGroup7";
 			this->ribbonPageGroup7->Text = L"ribbonPageGroup7";
 			// 
@@ -478,6 +546,36 @@ namespace CppCLRWinFormsProject {
 			this->MainPannel->TabIndex = 2;
 			this->MainPannel->Paint += gcnew System::Windows::Forms::PaintEventHandler(this, &Main::MainPannel_Paint);
 			// 
+			// barButtonItem19
+			// 
+			this->barButtonItem19->Caption = L"Add Fee";
+			this->barButtonItem19->Id = 26;
+			this->barButtonItem19->Name = L"barButtonItem19";
+			// 
+			// ribbonPageGroup5
+			// 
+			this->ribbonPageGroup5->ItemLinks->Add(this->barButtonItem20);
+			this->ribbonPageGroup5->Name = L"ribbonPageGroup5";
+			this->ribbonPageGroup5->Text = L"ribbonPageGroup5";
+			// 
+			// barButtonItem20
+			// 
+			this->barButtonItem20->Caption = L"Submit Fee";
+			this->barButtonItem20->Id = 27;
+			this->barButtonItem20->Name = L"barButtonItem20";
+			// 
+			// ribbonPageGroup13
+			// 
+			this->ribbonPageGroup13->ItemLinks->Add(this->barButtonItem21);
+			this->ribbonPageGroup13->Name = L"ribbonPageGroup13";
+			this->ribbonPageGroup13->Text = L"ribbonPageGroup13";
+			// 
+			// barButtonItem21
+			// 
+			this->barButtonItem21->Caption = L"Fee Record";
+			this->barButtonItem21->Id = 28;
+			this->barButtonItem21->Name = L"barButtonItem21";
+			// 
 			// Main
 			// 
 			this->AutoScaleDimensions = System::Drawing::SizeF(6, 13);
@@ -504,71 +602,52 @@ namespace CppCLRWinFormsProject {
 
 		private:
 			AddNewStudent^ addNewStudent = gcnew AddNewStudent();
-			HomeFeeStatus^ homeFeeStatus = gcnew HomeFeeStatus();
-			HomeAttandence^ homeAttandence = gcnew HomeAttandence();
 			Students^ students = gcnew Students();
 			Attandence^ attandence = gcnew Attandence();
 			StudentAttandence^ studentAttandence = gcnew StudentAttandence();
+			AddExam^ addExam = gcnew AddExam();
+			DelExam^ delExam = gcnew DelExam();
+			AddGrades^ addGrades = gcnew AddGrades();
+			Report^ report = gcnew Report();
+			ReportByStudent^ rbs = gcnew ReportByStudent();
 
 #pragma endregion
 		//CAll When Main Form Is Loading
 		private: System::Void Main_Load(System::Object^ sender, System::EventArgs^ e) {
 			MainWindowMessage->Caption = "Logged In Successfully!!!!!";
+			//Hiding Exiting Panels
+			attandence->Hide();
+			students->Hide();
+			studentAttandence->Hide();
+			addExam->Hide();
+			delExam->Hide();
+			addGrades->Hide();
+			report->Hide();
+			rbs->Hide();
 			//Configuring Form To Load In Current Pannel
-			homeAttandence->Dock = Windows::Forms::DockStyle::Fill;
-			homeAttandence->TopLevel = false;
-			homeAttandence->TopMost = true;
-			this->MainPannel->Controls->Add(homeAttandence);
-			homeAttandence->Show();
+			addNewStudent->Dock = Windows::Forms::DockStyle::Fill;
+			addNewStudent->TopLevel = false;
+			addNewStudent->TopMost = true;
+			this->MainPannel->Controls->Add(addNewStudent);
+			addNewStudent->Show();
 		}
 		//CAll When Form Is Closing
 		private: System::Void Main_FormClosing(System::Object^ sender, System::Windows::Forms::FormClosingEventArgs^ e) 
 		{
 			Application::Exit();
 		}
-		//
-		// 
-		//Home
-		// 
-		// 
-		//Call When Click On Home > Attandence
-		private: System::Void barButtonItem1_ItemClick(System::Object^ sender, DevExpress::XtraBars::ItemClickEventArgs^ e) {
-			// Hiding Exiting Panels
-			addNewStudent->Hide();
-			homeFeeStatus->Hide();
-			students->Hide();
-			attandence->Hide();
-			studentAttandence->Hide();
-			//Configuring Form To Load In Current Pannel
-			homeAttandence->Dock = Windows::Forms::DockStyle::Fill;
-			homeAttandence->TopLevel = false;
-			homeAttandence->TopMost = true;
-			this->MainPannel->Controls->Add(homeAttandence);
-			homeAttandence->Show();
-		}
-		//CAll When Click On Home > Fee Status
-		private: System::Void barButtonItem6_ItemClick(System::Object^ sender, DevExpress::XtraBars::ItemClickEventArgs^ e) {
-			// Hiding Exiting Panels
-			addNewStudent->Hide();
-			homeAttandence->Hide();
-			students->Hide();
-			attandence->Hide();
-			studentAttandence->Hide();
-			//Configuring Form To Load In Current Pannel
-			homeFeeStatus->Dock = Windows::Forms::DockStyle::Fill;
-			homeFeeStatus->TopLevel = false;
-			homeFeeStatus->TopMost = true;
-			this->MainPannel->Controls->Add(homeFeeStatus);
-			homeFeeStatus->Show();
-		}
+
 		//Call When Click On Students 
 		private: System::Void barButtonItem3_ItemClick(System::Object^ sender, DevExpress::XtraBars::ItemClickEventArgs^ e) {
 			//Hiding Exiting Panels
-			homeFeeStatus->Hide();
-			homeAttandence->Hide();
 			addNewStudent->Hide();
 			attandence->Hide();
 			studentAttandence->Hide();
+			addExam->Hide();
+			delExam->Hide();
+			addGrades->Hide();
+			report->Hide();
+			rbs->Hide();
 			//Configuring Form To Load In Current Pannel
 			students->Dock = Windows::Forms::DockStyle::Fill;
 			students->TopLevel = false;
@@ -577,14 +656,17 @@ namespace CppCLRWinFormsProject {
 			students->UpdateGrid();
 			students->Show();
 		}
-		//Call When Click On Add Student
+			   //Call When Click On Add Student
 		private: System::Void barButtonItem4_ItemClick(System::Object^ sender, DevExpress::XtraBars::ItemClickEventArgs^ e) {
 			//Hiding Exiting Panels
-			homeFeeStatus->Hide();
-			homeAttandence->Hide();
 			attandence->Hide();
 			students->Hide();
 			studentAttandence->Hide();
+			addExam->Hide();
+			delExam->Hide();
+			addGrades->Hide();
+			report->Hide();
+			rbs->Hide();
 			//Configuring Form To Load In Current Pannel
 			addNewStudent->Dock = Windows::Forms::DockStyle::Fill;
 			addNewStudent->TopLevel = false;
@@ -592,19 +674,22 @@ namespace CppCLRWinFormsProject {
 			this->MainPannel->Controls->Add(addNewStudent);
 			addNewStudent->Show();
 		}
-		
+
 		private: System::Void MainPannel_Paint(System::Object^ sender, System::Windows::Forms::PaintEventArgs^ e) {
-			
+
 		}
 
-		//Call When CLick On Attandence > Attandence
+			   //Call When CLick On Attandence > Attandence
 		private: System::Void barButtonItem13_ItemClick(System::Object^ sender, DevExpress::XtraBars::ItemClickEventArgs^ e) {
 			//Hiding Exiting Panels
-			homeFeeStatus->Hide();
-			homeAttandence->Hide();
 			students->Hide();
 			addNewStudent->Hide();
 			studentAttandence->Hide();
+			addExam->Hide();
+			delExam->Hide();
+			addGrades->Hide();
+			report->Hide();
+			rbs->Hide();
 			//Configuring Form To Load In Current Pannel
 			attandence->Dock = Windows::Forms::DockStyle::Fill;
 			attandence->TopLevel = false;
@@ -612,14 +697,17 @@ namespace CppCLRWinFormsProject {
 			this->MainPannel->Controls->Add(attandence);
 			attandence->Show();
 		}
-		//Call When Click On Attandence > Report
+			   //Call When Click On Attandence > Report
 		private: System::Void barButtonItem14_ItemClick(System::Object^ sender, DevExpress::XtraBars::ItemClickEventArgs^ e) {
 			//Hiding Exiting Panels
-			homeFeeStatus->Hide();
-			homeAttandence->Hide();
 			students->Hide();
 			addNewStudent->Hide();
 			attandence->Hide();
+			addExam->Hide();
+			delExam->Hide();
+			addGrades->Hide();
+			report->Hide();
+			rbs->Hide();
 			//Configuring Form To Load In Current Pannel
 			studentAttandence->Dock = Windows::Forms::DockStyle::Fill;
 			studentAttandence->TopLevel = false;
@@ -627,5 +715,95 @@ namespace CppCLRWinFormsProject {
 			this->MainPannel->Controls->Add(studentAttandence);
 			studentAttandence->Show();
 		}
+			   //Call When Click On Grading > Add Exam
+	private: System::Void barButtonItem10_ItemClick(System::Object^ sender, DevExpress::XtraBars::ItemClickEventArgs^ e) {
+		//Hiding Exiting Panels
+		students->Hide();
+		addNewStudent->Hide();
+		attandence->Hide();
+		studentAttandence->Hide();
+		delExam->Hide();
+		addGrades->Hide();
+		report->Hide();
+		rbs->Hide();
+		//Configuring Form To Load In Current Pannel
+		addExam->Dock = Windows::Forms::DockStyle::Fill;
+		addExam->TopLevel = false;
+		addExam->TopMost = true;
+		this->MainPannel->Controls->Add(addExam);
+		addExam->updateForm();
+		addExam->Show();
+	}
+	//CAll When CLick On Grading > Del Exam
+	private: System::Void barButtonItem17_ItemClick(System::Object^ sender, DevExpress::XtraBars::ItemClickEventArgs^ e) {
+		//Hiding Exiting Panels
+		students->Hide();
+		addNewStudent->Hide();
+		attandence->Hide();
+		studentAttandence->Hide();
+		addExam->Hide();
+		addGrades->Hide();
+		report->Hide();
+		rbs->Hide();
+		//Configuring Form To Load In Current Pannel
+		delExam->Dock = Windows::Forms::DockStyle::Fill;
+		delExam->TopLevel = false;
+		delExam->TopMost = true;
+		this->MainPannel->Controls->Add(delExam);
+		delExam->updateForm();
+		delExam->Show();
+	}
+	//CAll When Click On Grading > Add Grades
+	private: System::Void barButtonItem11_ItemClick(System::Object^ sender, DevExpress::XtraBars::ItemClickEventArgs^ e) {
+		//Hiding Exiting Panels
+		students->Hide();
+		addNewStudent->Hide();
+		attandence->Hide();
+		studentAttandence->Hide();
+		addExam->Hide();
+		delExam->Hide();
+		report->Hide();
+		rbs->Hide();
+		//Configuring Form To Load In Current Pannel
+		addGrades->Dock = Windows::Forms::DockStyle::Fill;
+		addGrades->TopLevel = false;
+		addGrades->TopMost = true;
+		this->MainPannel->Controls->Add(addGrades);
+		addGrades->updateForm();
+		addGrades->Show();
+	}
+	//Call When Click On Grading > Report
+	private: System::Void barButtonItem12_ItemClick(System::Object^ sender, DevExpress::XtraBars::ItemClickEventArgs^ e) {
+		//Hiding Exiting Panels
+		students->Hide();
+		addNewStudent->Hide();
+		attandence->Hide();
+		studentAttandence->Hide();
+		addExam->Hide();
+		delExam->Hide();
+		rbs->Hide();
+		//Configuring Form To Load In Current Pannel
+		report->Dock = Windows::Forms::DockStyle::Fill;
+		report->TopLevel = false;
+		report->TopMost = true;
+		this->MainPannel->Controls->Add(report);
+		report->Show();
+	}
+	private: System::Void barButtonItem18_ItemClick(System::Object^ sender, DevExpress::XtraBars::ItemClickEventArgs^ e) {
+		//Hiding Exiting Panels
+		students->Hide();
+		addNewStudent->Hide();
+		attandence->Hide();
+		studentAttandence->Hide();
+		addExam->Hide();
+		delExam->Hide();
+		report->Hide();
+		//Configuring Form To Load In Current Pannel
+		rbs->Dock = Windows::Forms::DockStyle::Fill;
+		rbs->TopLevel = false;
+		rbs->TopMost = true;
+		this->MainPannel->Controls->Add(rbs);
+		rbs->Show();
+	}
 };
 }

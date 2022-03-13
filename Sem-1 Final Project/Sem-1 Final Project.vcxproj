@@ -130,7 +130,22 @@
     <ResourceCompile Include="app.rc" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="AddExam.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="AddFee.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="AddGrades.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="AddMarks.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
     <ClInclude Include="AddNewStudent.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="DelExam.h">
       <FileType>CppForm</FileType>
     </ClInclude>
     <ClInclude Include="Details.h">
@@ -142,18 +157,21 @@
     <ClInclude Include="Attandence.h">
       <FileType>CppForm</FileType>
     </ClInclude>
-    <ClInclude Include="HomeAttandence.h">
-      <FileType>CppForm</FileType>
-    </ClInclude>
-    <ClInclude Include="HomeFeeStatus.h">
-      <FileType>CppForm</FileType>
-    </ClInclude>
     <ClInclude Include="Main.h">
       <FileType>CppForm</FileType>
     </ClInclude>
     <ClInclude Include="pch.h" />
+    <ClInclude Include="Report.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="ReportByStudent.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
     <ClInclude Include="Resource.h" />
     <ClInclude Include="StudentAttandence.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="StudentReport.h">
       <FileType>CppForm</FileType>
     </ClInclude>
     <ClInclude Include="Students.h">
@@ -225,11 +243,26 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="AddExam.resx">
+      <DependentUpon>AddExam.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddFee.resx">
+      <DependentUpon>AddFee.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddGrades.resx">
+      <DependentUpon>AddGrades.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddMarks.resx">
+      <DependentUpon>AddMarks.h</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="AddNewStudent.resx">
       <DependentUpon>AddNewStudent.h</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Attandence.resx">
       <DependentUpon>Attandence.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DelExam.resx">
+      <DependentUpon>DelExam.h</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Details.resx">
       <DependentUpon>Details.h</DependentUpon>
@@ -237,14 +270,20 @@
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.h</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="HomeFeeStatus.resx">
-      <DependentUpon>HomeFeeStatus.h</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Main.resx">
       <DependentUpon>Main.h</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Report.resx">
+      <DependentUpon>Report.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportByStudent.resx">
+      <DependentUpon>ReportByStudent.h</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="StudentAttandence.resx">
       <DependentUpon>StudentAttandence.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StudentReport.resx">
+      <DependentUpon>StudentReport.h</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Students.resx">
       <DependentUpon>Students.h</DependentUpon>

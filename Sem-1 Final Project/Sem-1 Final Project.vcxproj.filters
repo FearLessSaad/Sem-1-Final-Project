@@ -13,14 +13,17 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
-    <Filter Include="Header Files\Home">
-      <UniqueIdentifier>{d36ade3b-b376-4947-853c-ec8cbf0bb1d6}</UniqueIdentifier>
-    </Filter>
     <Filter Include="Header Files\Students">
       <UniqueIdentifier>{32429f94-4a03-498f-bd5a-093b0b36c2d8}</UniqueIdentifier>
     </Filter>
     <Filter Include="Header Files\Attandence">
       <UniqueIdentifier>{bacb7d96-f0cf-4206-9d92-4597ad4843d8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Grading">
+      <UniqueIdentifier>{e667cb2e-ec7d-4fe7-a114-78dc1659919a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Fee">
+      <UniqueIdentifier>{f15731ca-1ebf-452b-b6a5-26f5cecdc790}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
@@ -44,12 +47,6 @@
     <ClInclude Include="AddNewStudent.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="HomeAttandence.h">
-      <Filter>Header Files\Home</Filter>
-    </ClInclude>
-    <ClInclude Include="HomeFeeStatus.h">
-      <Filter>Header Files\Home</Filter>
-    </ClInclude>
     <ClInclude Include="Students.h">
       <Filter>Header Files\Students</Filter>
     </ClInclude>
@@ -61,6 +58,30 @@
     </ClInclude>
     <ClInclude Include="Details.h">
       <Filter>Header Files\Attandence</Filter>
+    </ClInclude>
+    <ClInclude Include="AddExam.h">
+      <Filter>Header Files\Grading</Filter>
+    </ClInclude>
+    <ClInclude Include="DelExam.h">
+      <Filter>Header Files\Grading</Filter>
+    </ClInclude>
+    <ClInclude Include="AddGrades.h">
+      <Filter>Header Files\Grading</Filter>
+    </ClInclude>
+    <ClInclude Include="AddMarks.h">
+      <Filter>Header Files\Grading</Filter>
+    </ClInclude>
+    <ClInclude Include="Report.h">
+      <Filter>Header Files\Grading</Filter>
+    </ClInclude>
+    <ClInclude Include="ReportByStudent.h">
+      <Filter>Header Files\Grading</Filter>
+    </ClInclude>
+    <ClInclude Include="StudentReport.h">
+      <Filter>Header Files\Grading</Filter>
+    </ClInclude>
+    <ClInclude Include="AddFee.h">
+      <Filter>Header Files\Fee</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

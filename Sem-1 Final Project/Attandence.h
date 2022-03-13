@@ -310,8 +310,8 @@ namespace CppCLRWinFormsProject {
 		}
 		private: System::Void simpleButton3_Click(System::Object^ sender, System::EventArgs^ e) {
 
-			System::Windows::Forms::DialogResult res = MessageBox::Show("Are You Sure You Want To Save Attandence?", "Confirmation", MessageBoxButtons::OKCancel, MessageBoxIcon::Information);
-			if (res == System::Windows::Forms::DialogResult::OK) {
+			System::Windows::Forms::DialogResult res = MessageBox::Show("Are You Sure You Want To Save Attandence?", "Confirmation", MessageBoxButtons::YesNo, MessageBoxIcon::Information);
+			if (res == System::Windows::Forms::DialogResult::Yes) {
 				int len = dataGridView1->RowCount;
 				String^ st = "";
 				try {
